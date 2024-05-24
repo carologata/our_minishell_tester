@@ -170,7 +170,6 @@ input_list.append("((echo hi | cat -e) | cat -e)") #155
 input_list.append("echo \"(hello)\" > infile1") #156
 input_list.append("cat infile1 | grep \");\"$") #157
 input_list.append("cat infile1 | grep \"(\"") #158
-input_list.append("Error") #159
 
 # OUTPUT REFERENCE LIST
 output_ref_list = ["infile1: No such file or directory\ninfile2: No such file or directory\n"] #1
@@ -331,7 +330,6 @@ output_ref_list.append("hi$$\n") #155
 output_ref_list.append("") #156
 output_ref_list.append("") #157
 output_ref_list.append("(hello)\n") #158
-output_ref_list.append("Error\n") #159
 
 # OUTPUT EXIT CODE LIST
 output_exit_code = ["1\n"] #1
@@ -492,7 +490,6 @@ output_exit_code.append("0\n") #155
 output_exit_code.append("0\n") #156
 output_exit_code.append("1\n") #157
 output_exit_code.append("0\n") #158
-output_exit_code.append("X\n") #159
 
 
 # Function to process the file content and modify it
